@@ -1,0 +1,21 @@
+body {
+    background-color: #1695a3;
+    text-color: white; 
+     }
+p {
+    color: EB7F00;
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+p {
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+}
+footer a {
+    text-decoration: none;
+}

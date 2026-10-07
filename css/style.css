@@ -1,0 +1,44 @@
+/* the * indicates universal styles, we will get into that later in the semester
+for now, you can leave these alone */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Css is how we add all things style, below there are two simple styles added
+go ahead and play with these, can you get the colors to change? What do you notice?
+ */
+
+body {
+
+    color: #FFFFFF;
+    background-color: #980D0D;
+    font-family: 'Lexend Deca', sans-serif;
+}
+nav ul {
+  font-family: Lexend Deca', sans-serif;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* nav links on the landing page only */
+.landing nav a:link {
+  color: #ddff00;
+}
+
+/* link to my website */
+.site-link:link,
+.site-link:visited {
+  color: #ddff00;
+}

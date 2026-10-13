@@ -11,9 +11,43 @@ for now, you can leave these alone */
 go ahead and play with these, can you get the colors to change? What do you notice?
  */
 
-body {
 
-    color: #26241C;
-    background-color: #F2F0D8;
+ nav ul {
+  font-family: Lexend Deca', sans-serif;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  text-align: justify;
+	text-justify: inter-word;
 }
 
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+iframe {
+   display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;  
+}
+
+body {
+    color: #26241C;
+    background-color: #00B4C4;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    max-width: 700px;       
+    margin: 0 auto 1.5em;    
+    padding: 0 24px;         
+    line-height: 1.6;

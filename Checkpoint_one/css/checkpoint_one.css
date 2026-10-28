@@ -14,21 +14,40 @@ go ahead and play with these, can you get the colors to change? What do you noti
  main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;            
+    align-items: center;      /* was flex-start (left) – center like inspo */
     gap: 1.5em;
-    max-width: 700px;                   
-    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;           /* new – centers the whole column in the window */
+    padding: 40px 0;          /* was 40px – the p's already have 24px side padding */
+}
+
+/* new – centered headings, like inspo's h3/h4 */
+h1,
+h2 {
+    text-align: center;
+}
+
+/* new – sketchbook list centered with no bullets, like the nav */
+.sketchbook-links {
+    text-align: center;
+}
+
+.sketchbook-links ul {
+    list-style-type: none;
 }
 
 body {
 color: #26241C;
     background-color: #00B4C4;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
+
  nav ul {
+    color: ;
   font-family: 'Lexend Deca', sans-serif;
-  list-style-type: none;
+  list-style-type: disc;
+  list-style-position: inside;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -37,10 +56,21 @@ color: #26241C;
 	text-justify: inter-word;
 }
 
-
+nav a,
+.sketchbook-links a {
+  color: darkblue;
+}
 
 img {
     display: block;
-    max-width: 100%;  
+    margin: 0 auto;           /* new – centers images, same as inspo */
+    max-width: 100%;
     height: auto; 
 }
+
+p {
+     max-width: 700px;       
+    margin: 0 auto 1.5em;    
+    padding: 0 24px;         
+    line-height: 1.6;
+}f

@@ -46,6 +46,12 @@ go ahead and play with these, can you get the colors to change? What do you noti
 	text-justify: inter-word;
 }
 
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 h1{
     text-align: center;
 }

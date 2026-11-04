@@ -76,9 +76,10 @@ color: #26241C;
 	text-justify: inter-word;
 }
 
-nav a,
-.sketchbook-links a {
-  color: darkblue;
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 img {

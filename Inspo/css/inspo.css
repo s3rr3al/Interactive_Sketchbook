@@ -77,6 +77,12 @@ nav ul {
 	text-justify: inter-word;
 }
 
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 img {
   display: block;
   width: 500px;         

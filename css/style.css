@@ -13,14 +13,36 @@ go ahead and play with these, can you get the colors to change? What do you noti
 
 body {
 
-    color: #FFFFFF;
-    background-color: #980D0D;
+    color: #26241C;
+    background-color: #00B4C4;
     font-family: 'Lexend Deca', sans-serif;
     }
 
+    .site-header {
+  display: flex;
+  justify-content: center;   
+  padding: 20px 24px 0;
+}
+
+    .logo {
+  display: block;
+  width: 80px;               
+  height: auto;
+  transition: transform 0.8s ease-in-out;
+}
+    .logo-link:hover .logo,
+.logo-link:focus-visible .logo {
+  transform: rotate(360deg);
+}
+
+    @media (prefers-reduced-motion: reduce) {
+  .logo {
+    transition: none;
+  }
+}
 nav ul {
-  font-family: Lexend Deca', sans-serif;
-  list-style-type: none;
+  font-family: 'Lexend Deca', sans-serif;
+  list-style-type: disc;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -35,33 +57,36 @@ nav a {
   font-weight: bold;
 }
 
-/* nav links on the landing page only */
+
 .landing nav a:link {
   color: #ddff00;
 }
 
 h1 {
+  text-align: center;
   gap: 30px;
   padding: 2.50%;
   width: 100%;
 }
 
 p {
-   text-align: justify;
+  text-align: center;
 	text-justify: inter-word;
   width: 50%;
-	padding: 2.50%;
+	padding: -10%;
 	display: flex;
+  margin-left: 25%;
 }
 
 footer {
-  width: 100dvw;
-  margin-left: 2.5%;
-	margin-right: 2.5%;
+  text-align: center;
+  width: 100%;
 }
 
-/* link to my website */
+
 .site-link:link,
 .site-link:visited {
   color: #ddff00;
 }
+
+

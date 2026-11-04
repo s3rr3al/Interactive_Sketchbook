@@ -11,10 +11,33 @@ for now, you can leave these alone */
 go ahead and play with these, can you get the colors to change? What do you notice?
  */
 
+ .site-header {
+  display: flex;
+  justify-content: center;   
+  padding: 20px 24px 0;
+}
+
+    .logo {
+  display: block;
+  width: 80px;               /* adjust to taste */
+  height: auto;
+  transition: transform 0.8s ease-in-out;
+}
+    .logo-link:hover .logo,
+.logo-link:focus-visible .logo {
+  transform: rotate(360deg);
+}
+
+    @media (prefers-reduced-motion: reduce) {
+  .logo {
+    transition: none;
+  }
+}
+
 
  nav ul {
   font-family: Lexend Deca', sans-serif;
-  list-style-type: none;
+  list-style-type: disc;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -45,7 +68,7 @@ body {
     background-color: #00B4C4;
     font-family: 'Lexend Deca', sans-serif;
 }
-
+ 
 p {
     max-width: 700px;       
     margin: 0 auto 1.5em;    

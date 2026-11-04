@@ -13,9 +13,32 @@ go ahead and play with these, can you get the colors to change? What do you noti
 
 body {
 
-    color: #26241C;
+    color: 26241C;
     background-color: #00B4C4;
     font-family: 'Lexend Deca', sans-serif;
+}
+
+  .site-header {
+  display: flex;
+  justify-content: center;   
+  padding: 20px 24px 0;
+}
+
+    .logo {
+  display: block;
+  width: 80px;               /* adjust to taste */
+  height: auto;
+  transition: transform 0.8s ease-in-out;
+}
+    .logo-link:hover .logo,
+.logo-link:focus-visible .logo {
+  transform: rotate(360deg);
+}
+
+    @media (prefers-reduced-motion: reduce) {
+  .logo {
+    transition: none;
+  }
 }
 
 p{
@@ -25,6 +48,9 @@ p{
     line-height: 1.6;
 }
 
+h1{
+    text-align: center;
+}
 h3 {
     text-align: center;
 }
@@ -40,6 +66,7 @@ img {
 }
 
 nav ul {
+    color: whitesmoke
   font-family: Lexend Deca', sans-serif;
   list-style-type: none;
   display: flex;
@@ -48,4 +75,14 @@ nav ul {
   padding: 20px;
   text-align: justify;
 	text-justify: inter-word;
+}
+
+img {
+  display: block;
+  width: 500px;         
+  max-width: 90%;        
+  aspect-ratio: 1 / 1;   
+  height: auto;
+  object-fit: cover;     
+  margin: 0 auto;       
 }
